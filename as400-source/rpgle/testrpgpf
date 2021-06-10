@@ -1,0 +1,13 @@
+     FTESTPF    IF   E           K DISK
+      * test changes 6/10/2021 4:44pm
+     C
+      /Free
+       SetLL *Loval TESTPF;
+       Read TESTPF;
+       DoW Not %eof(TESTPF);
+         Dsply CLNTID;
+         Read TESTPF;
+       EndDo;
+       *Inlr=*on;
+      /End-Free
+     C       
